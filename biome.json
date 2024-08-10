@@ -7,9 +7,19 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
-		}
+		},
+		"ignore": [
+			".next",
+			".vercel",
+			".wrangler"
+		]
 	},
 	"formatter": {
-		"enabled": true
+		"enabled": true,
+		"ignore": [
+			".next",
+			".vercel",
+			".wrangler"
+		]
 	}
 }
