@@ -4,8 +4,8 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
 # Disable default *.pages.dev domains
-workers_dev = false
+# workers_dev = false
 
-[[routes]]
-pattern = "www.waifu.dev"
-custom_domain = true
+# [[routes]]
+# pattern = "www.waifu.dev"
+# custom_domain = true
