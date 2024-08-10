@@ -28,6 +28,9 @@ jobs:
       - name: Print build info
         run: bunx @cloudflare/next-on-pages@latest --info
 
+      - name: Lint
+        run: bun run lint
+
       - name: Build
         run: bunx @cloudflare/next-on-pages@latest
         env:
