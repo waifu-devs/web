@@ -9,8 +9,8 @@ export default async function Auth() {
     }
   })
   if (!res.ok) {
-    throw new Error(await res.text())
-    //return redirect("/auth/github")
+    //throw new Error(await res.text())
+    return redirect("/auth/github")
   }
   const data = await res.json()
   return (<>
