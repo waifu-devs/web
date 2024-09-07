@@ -1,17 +1,16 @@
-import { API_BASE_URL } from "@/lib/api"
+import { API_BASE_URL, fetcher } from "@/lib/api"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 
 export const runtime = "edge"
 
 export default async function Auth() {
-  const res = await fetch(`${API_BASE_URL}/user`, {
+  const res = await fetcher(`${API_BASE_URL}/user`, {
     headers: {
       Cookie: cookies().toString()
     }
   })
   if (!res.ok) {
-    //throw new Error(await res.text())
     return redirect("/auth/github")
   }
   const data = await res.json()

@@ -9,3 +9,7 @@ pages_build_output_dir = ".vercel/output/static"
 # [[routes]]
 # pattern = "www.waifu.dev"
 # custom_domain = true
+
+[[services]]
+binding = "API"
+service = "waifu-dev-api"
