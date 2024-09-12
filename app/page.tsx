@@ -12,22 +12,26 @@ import { useEffect } from "react";
 const words = [
   {
     text: "watch.",
+    className: "text-[#9B91C0]",
   },
   {
     text: "read.",
+    className: "text-[#CF8BA9]",
   },
   {
     text: "play.",
+    className: "text-[#CEC2FF]",
   },
   {
     text: "develop.",
+    className: "text-[#B86D79]",
   },
 ];
 
 export default function Home() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2, 
+    threshold: 0.2,
   });
 
   useEffect(() => {
