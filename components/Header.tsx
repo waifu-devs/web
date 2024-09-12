@@ -66,6 +66,7 @@ export default function Header() {
 
         <div className='flex flex-row items-center'>
         <button
+            type='button'
             onClick={toggleDarkMode}
             className='p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-all'
           >
