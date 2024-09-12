@@ -11,7 +11,7 @@ export default function Home() {
         <Header/>
         <div className="flex flex-col items-center">
         <HeroHighlightDemo/>
-        <Image src={Waifu} alt={'Cosa'}></Image>
+        <Image src={Waifu} alt={'Cosa'} />
         </div>
     </main>
   );
