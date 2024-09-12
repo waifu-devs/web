@@ -11,7 +11,9 @@
 		"ignore": [
 			".next",
 			".vercel",
-			".wrangler"
+			".wrangler",
+			"components/ui",
+			"tailwind.config.ts"
 		]
 	},
 	"formatter": {
@@ -19,7 +21,9 @@
 		"ignore": [
 			".next",
 			".vercel",
-			".wrangler"
+			".wrangler",
+			"components/ui",
+			"tailwind.config.ts"
 		]
 	}
 }
